@@ -1,0 +1,36 @@
+<div class="image-container">
+    <img src="./scrollimages/c-1.jpg" alt="Image 1">
+    <img src="./scrollimages/c-2.jpg" alt="Image 2">
+    <img src="./scrollimages/c-3.jpg" alt="Image 2">
+    <img src="./scrollimages/c-4.jpg" alt="Image 2">
+    <img src="./scrollimages/c-5.jpg" alt="Image 2">
+    <img src="./scrollimages/c-2.jpg" alt="Image 2">
+    <img src="./scrollimages/c-3.jpg" alt="Image 2">
+    <img src="./scrollimages/c-6.jpg" alt="Image 2">
+  </div>
+
+  <style>
+    .image-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: gray;
+}
+
+.image-container img {
+  display: flexbox;
+  width: 200px; 
+  height: auto;
+  animation: scrollImages 10s linear infinite;
+  padding: 2%;
+  border-radius: 20%;
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+  </style>
